@@ -1,0 +1,12 @@
+python
+lstm
+sciket-learn
+keras
+flask
+pandas
+datetime
+numpy
+matplotlib.pyplot
+tkinter
+Adam regularizers
+EarlyStopping, ReduceLROnPlateau
