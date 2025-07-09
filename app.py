@@ -3,6 +3,7 @@ import numpy as np
 from flask import Flask, render_template, request
 # from keras.models import load_model
 from keras.models import load_model
+import os
 
 # Load model and dataset
 model = load_model('model/usd_inr_lstm_model.h5', compile=False)
@@ -111,4 +112,5 @@ def index():
     return render_template('index.html', predictions=predictions)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+   port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
