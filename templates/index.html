@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USD to INR Forecast</title>
+</head>
+<body>
+    <h2>USD to INR Forecast</h2>
+    <form method="POST">
+        <label for="date">Enter a date (YYYY-MM-DD):</label>
+        <input type="date" name="date" required>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if predictions %}
+        <h3>Results:</h3>
+        <ul>
+            {% for pred in predictions %}
+                <li>{{ pred }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
