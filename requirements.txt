@@ -1,7 +1,7 @@
-scikit-learn
-pandas== 2.2.3
-numpy== 1.26.4
-matplotlib== 3.10.1
-tensorflow== 2.19.0
-flask== 3.1.0
-python== 3.10.10
+python==3.10.10
+pandas==2.2.3
+numpy==1.26.4
+matplotlib==3.8.4
+tensorflow==2.16.1
+scikit-learn==1.4.2
+flask==3.1.0
